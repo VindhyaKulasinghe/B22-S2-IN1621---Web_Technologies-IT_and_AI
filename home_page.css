@@ -1,53 +1,75 @@
 header {
-    background: url(video/amaya-video-1-xs.mp4) center center fixed;
+    background-image: url(images/navbackground.jpg);
     background-size: cover;
     height: 100vh;
-    position: relative; /* Ensures the content inside header is positioned correctly */
-    z-index: -1; /* Positions the background behind other content */
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.672);
+    background-color: rgba(0, 0, 0, 0.95);
     width: 100%;
     padding-bottom: 1%;
     position: fixed;
     z-index: 1;
 }
-nav a{
+
+nav a {
     color: white;
-    font-size:18px;
-    font-weight:700;
+    font-size: 18px;
+    font-weight: 700;
     font-family: "Dosis", sans-serif;
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     opacity: 0.8;
-    color: orangered;
+    color: gold;
 }
-.nav1{
+
+.nav1 {
     color: white;
     margin-top: 22px;
-    font-size:18px;
-    font-weight:700;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+
 }
-#shopbtn{
-    background-color:rgba(0, 0, 0, 0);
-    font-size:18px;
-    font-weight:700;
+
+.navinner {
+    width: 20%;
+}
+
+#shopbtn {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
     font-family: "Dosis", sans-serif;
     border: none;
     color: white;
 }
-#logo{
-    position: fixed;
-    left: 45%;
-    margin-top: 10px;
-    width:7%;
+
+#shopbtn:hover {
+    color: gold;
 }
-#scroll0{
+.dropdown-item:hover{
+    background-color: #000000;
+    color: white;
+    font-weight: 800;
+}
+#logo {
+    position: fixed;
+    left: 46%;
+    margin-top: 6px;
+    width: 100px;
+}
+
+#scroll0 {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -58,22 +80,25 @@ nav a:hover{
     left: 24%;
     top: 20%;
 }
-#scroll0 h1{
+
+#scroll0 h1 {
     margin-top: 0;
     font-size: 70px;
     font-weight: 900;
     text-shadow: 4px 4px #000000;
     font-family: "Dosis", sans-serif;
-    
+
 }
-#scroll0 p{
+
+#scroll0 p {
     margin-bottom: 0;
     font-size: 33px;
     font-weight: 900;
     text-shadow: 3px 3px #000000;
     font-family: "Dosis", sans-serif;
 }
-#scroll0 button{
+
+#scroll0 button {
     font-family: "Dosis", sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -85,13 +110,15 @@ nav a:hover{
     padding: 5px 20px 5px 20px;
     margin-top: 20%;
 }
-#scroll0 button:hover{
+
+#scroll0 button:hover {
     border: 3px solid black;
     background-color: white;
     color: black;
 
 }
-#sidetext{
+
+#sidetext {
     color: white;
     position: absolute;
     top: 50%;
@@ -100,8 +127,9 @@ nav a:hover{
     font-size: 20px;
     left: -4%;
 }
-#section1{
-    padding:2% 5% 0% 5%;
+
+#section1 {
+    padding: 2% 5% 0% 5%;
     text-align: center;
     background-color: #141414;
     color: white;
@@ -109,92 +137,110 @@ nav a:hover{
     height: 100vh;
     overflow: hidden;
 }
-#section1text{
+
+#section1text {
     width: 80%;
     display: block;
     margin: auto auto 40px auto;
     height: 20%;
 }
-#section1text h1{
+
+#section1text h1 {
     font-family: "Dosis", sans-serif;
     font-weight: 700;
     letter-spacing: 4px;
     font-size: 50px;
-    margin:4%;
+    margin: 4%;
 }
-#section1text p{
+
+#section1text p {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
 }
-#section1img{
+
+#section1img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     height: 65%;
-    
+
 }
-.sec1imgs{
-    background-size:cover;
+
+.sec1imgs {
+    background-size: cover;
     transition: 0.5s;
     height: 100%;
+    overflow: hidden;
 }
-#section1img a{
+
+#section1img a {
     width: 25%;
     height: 100%;
     text-decoration: none;
     color: aliceblue;
+    
 }
-.section1imgtext{
+
+.section1imgtext {
     position: relative;
-    top:0%;
+    top: 0%;
     background-color: #00000077;
-    padding: 0.5% 0 1% 0 ;
+    padding: 0.5% 0 1% 0;
     font-family: "Dosis", sans-serif;
     font-weight: 800;
     letter-spacing: 3px;
+    
 }
-.sec1imgs:hover{
-    color:gold;
-    transform: scale(1.08);
-}
-#img1{
+
+#img1 {
     background-image: url(images/visitus.png);
+    background-position: center;
 }
-#img2{
+
+#img2 {
     background-image: url(images/ourproduct.png);
+    background-position: center;
 }
-#img3{
+
+#img3 {
     background-image: url(images/menu.png);
+    background-position: center;
 }
-#section2{
-    padding:2% 5% 0% 5%;
+
+#section2 {
+    padding: 2% 5% 0% 5%;
     text-align: center;
     background-color: #141414;
     color: white;
     height: 100vh;
     overflow: hidden;
 }
-#section2text{
+
+#section2text {
     width: 50%;
     display: block;
     margin: auto auto 40px auto;
     height: 20%;
     font-family: "Dosis", sans-serif;
     letter-spacing: 5px;
+
 }
-#section2text h1{
+
+#section2text h1 {
     font-size: 50px;
-    margin:4%;
+    margin: 4%;
     font-weight: 600;
 
 }
-#section2text p{
+
+#section2text p {
     font-size: 20px;
     font-weight: 100;
 }
-#section2img{
+
+#section2img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -202,25 +248,30 @@ nav a:hover{
     height: 65%;
     
 }
-.sec2imgs{
+
+.sec2imgs {
     width: 25%;
     height: 100%;
-    background-size:cover;
+    background-size: cover;
     transition: 0.5s;
 }
-.sec2imgs:hover{
-    transform: scale(1.1);
-}
-#img4{
+
+#img4 {
     background-image: url(images/product1.png);
+    background-position: center;
 }
-#img5{
+
+#img5 {
     background-image: url(images/product2.png);
+    background-position: center;
 }
-#img6{
+
+#img6 {
     background-image: url(images/product3.png);
+    background-position: center;
 }
-#section3{
+
+#section3 {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -229,7 +280,8 @@ nav a:hover{
     letter-spacing: 5px;
     font-weight: 600;
 }
-#section3part1{
+
+#section3part1 {
     background-image: url(images/homepagelocation.png);
     height: 100vh;
     width: 50%;
@@ -237,80 +289,96 @@ nav a:hover{
     background-position: center;
 
 }
-#section3part2{
+
+#section3part2 {
     background-color: #000000;
     height: 100vh;
     width: 50%;
     color: white;
     text-align: center;
 }
-#part2text{
+
+#part2text {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     top: 16%;
 }
-#section3 h1{
+
+#section3 h1 {
     font-size: 35px;
     letter-spacing: 5px;
     font-weight: 800;
 }
-#section3 h3{
+
+#section3 h3 {
     font-size: 20px;
     margin: 2%;
     letter-spacing: 5px;
     font-weight: 600;
 }
-#section3 p{
+
+#section3 p {
     font-size: 15px;
     margin: 2%;
 }
-#section3 button{
-    width: 200px;
+
+#section3 button {
+
     padding: 5% 2% 5% 2%;
 }
-#btn1{
+
+#btn1 {
     background-color: white;
     color: #000000;
     border: 3px solid black;
     margin-right: 10px;
+    width: 150px;
 }
-#btn2{
+
+#btn2 {
     background-color: #000000;
     color: white;
     border: 3px solid white;
+    width: 150px;
 }
-#buttton{
+
+#buttton {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 2%;
 }
-#btn1:hover{
+
+#btn1:hover {
     box-shadow: 0 0 5px whitesmoke,
-    0 0 25px whitesmoke,0 0 50px whitesmoke, 0 0 100px whitesmoke, 0 0 200px whitesmoke;
+        0 0 25px whitesmoke, 0 0 50px whitesmoke, 0 0 100px whitesmoke, 0 0 200px whitesmoke;
     background-color: black;
     color: white;
     border: 3px solid white;
 }
-#btn2:hover{
+
+#btn2:hover {
     box-shadow: 0 0 5px rgb(255, 143, 143),
-    0 0 25px gold,0 0 50px gold, 0 0 100px gold, 0 0 200px gold;
+        0 0 25px gold, 0 0 50px gold, 0 0 100px gold, 0 0 200px gold;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: 3px solid rgb(0, 0, 0);
 }
-footer{
+
+footer {
     background-color: #000000;
     font-family: "Dosis", sans-serif;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: white;
 }
-#footermaindiv1{
+
+#footermaindiv1 {
     color: white;
     display: flex;
     flex-direction: row;
@@ -318,29 +386,35 @@ footer a{
     text-align: center;
     padding: 2% 0 1% 0;
 }
-.footdiv1inner{
+
+.footdiv1inner {
     margin-bottom: 15%;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 5px;
 }
-#top{
+
+#top {
     font-size: 18px;
     font-weight: 800;
 }
-#imgdiv{
+
+#imgdiv {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.social{
+
+.social {
     width: 25px;
 }
-.social:hover{
+
+.social:hover {
     box-shadow: 0 0 5px whitesmoke,
-    0 0 25px whitesmoke,0 0 50px whitesmoke, 0 0 100px whitesmoke, 0 0 200px whitesmoke;
+        0 0 25px whitesmoke, 0 0 50px whitesmoke, 0 0 100px whitesmoke, 0 0 200px whitesmoke;
 }
-#footermaindiv2{
+
+#footermaindiv2 {
     color: white;
     display: flex;
     flex-direction: row;
@@ -348,11 +422,29 @@ footer a{
     text-align: center;
     padding-bottom: 2%;
     padding: 0 2% 3% 2%;
-    font-size: 12px;
-    letter-spacing: 3px;
+    font-size: 10px;
+    letter-spacing: 2px;
 }
-#footerlogo img{
+.footlogo img{
     position: absolute;
-    width: 120px;
-    left: 45%;
+    left: 44%;
+    width:90px;
+}
+@media screen and (max-width: 1050px) {
+    #logo {
+        display: none;
+    }
+    #section2text p {
+        display: none;
+    }
+    #section1text p {
+        display: none;
+    }
+    #buttton {
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2%;
+}
 }
